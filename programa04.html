@@ -16,13 +16,15 @@
             pulaLinha()
         }
 
-        let numeroSecreto = 5
+        let numeroSecreto = Math.round(Math.random() * 10)
+        console.log(numeroSecreto)
+
         let chute = prompt('Adivinhe o número secreto de 1 a 10')
         
         if(chute == numeroSecreto){
-            mostrar('Parabéns! você acertou o número')
+            mostrar('Parabéns! Você acertou o número')
         } else {
-            mostrar('Você errou!')
+            mostrar(`Você errou, o número secreto é ${numeroSecreto}`)
         }
 
         //if(chute != numeroSecreto) -> != é o sinal diferente
