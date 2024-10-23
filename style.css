@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-titulo:"Oswald", sans-serif;
+    --fonte-texto: "Agdasima", sans-serif;
+    --roxo: #2b2d42ff;
+    --lilás: #8d99aeff;
+    --branco: #edf2f4ff;
+    --vermelho-rosa: #ef233cff;
+    --vermelho: #d90429ff;
+}
+
+body{
+    background-color: var(--vermelho-rosa);
+    font-family: var(--fonte-texto);
+}
+
+header{
+    background-color: var(--vermelho);
+    text-align: center;
+    padding: 2em;
+    color: var(--branco)
+}
+
+header h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+}
+
+.projetos{
+    paddinG: 2em;
+    display: flex;
+}
