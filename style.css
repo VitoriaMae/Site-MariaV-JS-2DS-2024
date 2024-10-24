@@ -13,6 +13,7 @@
     --branco: #edf2f4ff;
     --vermelho-rosa: #ef233cff;
     --vermelho: #d90429ff;
+    --branco-dois: #FFFFFFFF;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
     font-family: var(--fonte-texto);
 }
 
-header{
+header, footer{
     background-color: var(--vermelho);
     text-align: center;
     padding: 2em;
@@ -35,4 +36,29 @@ header h1{
 .projetos{
     paddinG: 2em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartao{
+    text-align: center;
+    background-color: var(--branco-dois);
+    width: 100%;
+    margin: 1em 0;
+    color: var(--roxo);
+    padding: 1em 0;
+}
+
+.cartao:hover{
+    background-color: var(--vermelho);
+}
+
+.cartao a{
+    text-decoration: none;
+    color: var(--lilás)
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--lilás)
 }
